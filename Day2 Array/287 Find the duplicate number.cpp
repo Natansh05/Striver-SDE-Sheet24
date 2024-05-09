@@ -25,3 +25,8 @@ public:
         return nums[n-1];
     }
 };
+
+
+
+
+// link list approach jovanu na bhulto , baki che ee
