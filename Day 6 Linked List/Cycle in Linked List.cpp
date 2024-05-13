@@ -2,7 +2,7 @@
 // Time Complexity - O(N)
 // Space Complexity - O(1)
 
-
+// Floyd's Loop Detection Algorithm
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
