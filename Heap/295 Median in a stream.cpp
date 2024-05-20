@@ -1,5 +1,5 @@
 // link - https://leetcode.com/problems/find-median-from-data-stream/
-// Time Complexity - O(logN)
+// Time Complexity - O(logN) for each insertion , i.e. for N insertions, time complexity nearly equals nlogn
 // Space Complexity - O(N)
 
 class MedianFinder {
