@@ -19,3 +19,22 @@ public:
         return solve(n,k,!(k&1));
     }
 };
+
+
+// Second observation
+class Solution {
+    int solve(int n,int k){
+        if(n==1)
+            return 0;
+
+        int mid = pow(2,n-1)/2;
+        if(k>mid)
+            return 1 ^ solve(n-1,k-mid);
+        else 
+            return solve(n-1,k);
+    }
+public:
+    int kthGrammar(int n, int k) {
+        return solve(n,k);
+    }
+};
