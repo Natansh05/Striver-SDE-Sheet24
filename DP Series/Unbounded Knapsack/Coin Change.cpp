@@ -19,12 +19,12 @@ class Solution {
                 // may not be the correct ans , as humko chaiye 1 aur milega 2
                 // it will not cause any error in outut , but still for consistency , this initialisation should
                 // be used
-                if(i==1 && j!=0){
-                    if(j%nums[0] == 0 )
-                        t[i][j] = j/nums[0];
-                    else
-                        t[i][j] = INT_MAX-1;    
-                }
+                // if(i==1 && j!=0){
+                //     if(j%nums[0] == 0 )
+                //         t[i][j] = j/nums[0];
+                //     else
+                //         t[i][j] = INT_MAX-1;    
+                // }
             }
         }
 
