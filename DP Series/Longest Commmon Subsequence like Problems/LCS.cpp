@@ -8,7 +8,7 @@ public:
         ios_base::sync_with_stdio(false);
         int m = s.length();
         int n = t.length();
-
+        // string ans = "";
         int arr[m+1][n+1];
         
         for(int i=0;i<m+1;++i){
@@ -16,11 +16,14 @@ public:
                 if(i==0||j==0)
                     arr[i][j] = 0;
                 else if(s[i-1]==t[j-1])
+                    // ans.push_back(s[i-1));
                     arr[i][j] = 1 + arr[i-1][j-1];
                 else
                     arr[i][j] = max(arr[i-1][j],arr[i][j-1]);
             }
         }
+        // court<<ans<<endl;
+        // agar lcs vali string print karva ni ho
         return arr[m][n];
     }
 };
