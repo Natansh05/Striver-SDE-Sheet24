@@ -14,14 +14,20 @@ using namespace std;
 
 void bubble_sort(vector<int> &v){
     int n = v.size();
-    for(int i=0;i<n;++i){
+    int didswap = 0;
+    for(int i=0;i<n-1;++i){
+        didswap = 0;
         for(int j=0;j<n-i-1;++j){
             if(v[j]>v[j+1]){
                 swap(v[j],v[j+1]);
+                didswap = 1;
             }
         }
+        if(didswap == 0)
+            break;
     }
 }
+
 
 
 
