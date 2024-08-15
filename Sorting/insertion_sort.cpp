@@ -13,11 +13,15 @@ using namespace std;
 void insertion_sort(vector<int> &v){
     int n = v.size();
     for(int i=1;i<n;++i){
+        int didswap = 0;
         int j = i;
         while(j>0 && v[j]<v[j-1]){
             swap(v[j],v[j-1]);
+            didswap = 1;
             --j;
         }
+        if(didswap == 0)
+            break;
     }
 }
 
